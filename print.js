@@ -10,7 +10,7 @@
     window.print(); 
     window.onafterprint = afterPrint;
     function afterPrint(){
-        window.location.replace('./index.html')
+        window.location.replace('./auditorio.html')
     }
     setInterval(afterPrint, 500)
     
