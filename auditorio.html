@@ -11,19 +11,34 @@
     <title>Auditorio</title>
 </head>
 <body class="flex flex-col gap-2">
-    <header class="flex">
-        <a href="index.html" id="volver" class="bg-[#09f] text-white p-2 m-2 rounded-full font-bold">
+    <header class="flex justify-around">
+        <a
+        href="index.html" 
+        class="flex gap-2 bg-[#09f] text-white p-2 m-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
+            </svg>
             volver
+        </a>
+        <a href="printAuditorio.html" class="flex gap-2 bg-green-900 text-white p-2 m-6 font-bold text-xl rounded-full hover:bg-indigo-900 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" />
+                <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
+                <path d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" />
+              </svg>
+            Imprimir
         </a>
     </header>
     <main>
-    <a href="./img/auditorio-lilly.png" class="zoom"><img id="img" src="./img/auditorio-lilly.png" width="100%" height="100%" /></a>
+    <a href="./img/auditorio-lilly.png" class="zoom"><img src="./img/auditorio-lilly.png" width="100%" height="100%" /></a>
     </main>
     <script>
         $(function(){
             $('.zoom').zoomy({zoomSize:500});                
         }(jQuery))
     </script>
-    <script src="auditorio.js"></script>
 </body>
 </html>

@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Documentacion Lilly</title>
 </head>
 <body class="bg-[#222]">
     <nav class="flex flex-col">
         <section>
-            <ul class="flex flex-col p-4 text-center text-white m-4">
+            <ul class="flex flex-col p-4 text-center text-white m-2">
                 <li>
                 </li>
-                <li class="flex mb-12 border-2 p-6 rounded-3xl align-middle justify-between">
+                <li class="flex mb-4 border-2 p-6 rounded-3xl align-middle justify-between">
                     <img src="./img/logo-rpg.png" alt="" class ="mr-6">
                     <a 
                         href="auditorio.html"
-                        id="source" 
+                        id="auditorio" 
                         class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
                     >
                         Auditorio
@@ -74,5 +75,14 @@
             </ul>
         </section>
     </nav>
+    <header class="flex flex-col justify-center mb-4">
+        <h1 class="text-white text-5xl text-center font-bold">Documentación Lilly Auditorio</h1>
+    </header>
+    <main class="flex flex-col">       
+        <section class="flex items-center justify-center">
+            <img id="auditorioImg" src="./img/auditorio-lilly-tumb.png" alt="" height="600px" width="600px">
+        </section>
+    </main>
+    <script src="index.js"></script>
 </body>
 </html>
