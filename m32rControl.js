@@ -13,7 +13,7 @@ const start = () => {
   }).start()
 } 
 
-buttonYes.addEventListener('click', () => { window.location.replace('./m32rControl.html')})
+buttonYes.addEventListener('click', () => { window.location.replace('./m32rFader.html')})
 
 buttonNo.addEventListener('click', () => {window.location.replace('./index.html')})
 
