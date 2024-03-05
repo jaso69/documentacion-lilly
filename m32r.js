@@ -5,7 +5,7 @@ const buttonNo = document.querySelector('#no')
 const start = () => {
   introJs().oncomplete(async () => {
       return new Promise((resolve) => {
-        end()
+        next()
         setInterval(resolve, 500);
       });
   }).onbeforeexit(function () {
@@ -19,6 +19,9 @@ buttonNo.addEventListener('click', () => {window.location.replace('./index.html'
 
 document.querySelector('#dialogo').style.display = 'none'
 
+const next = () => {
+  window.location.replace('./m32rControl.html')
+}
 
 const end = () => {
   document.querySelector('#dialogo').style.display = 'block'

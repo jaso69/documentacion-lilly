@@ -5,7 +5,7 @@ const buttonNo = document.querySelector('#no')
 const start = () => {
   introJs().oncomplete(async () => {
       return new Promise((resolve) => {
-        next()
+        end()
         setInterval(resolve, 500);
       });
   }).onbeforeexit(function () {
@@ -13,16 +13,11 @@ const start = () => {
   }).start()
 } 
 
-buttonYes.addEventListener('click', () => { window.location.replace('./m32rFader.html')})
+buttonYes.addEventListener('click', () => { window.location.replace('./m32r.html')})
 
 buttonNo.addEventListener('click', () => {window.location.replace('./index.html')})
 
 document.querySelector('#dialogo').style.display = 'none'
-
-
-const next = () => {
-  window.location.replace('./m32rFader.html')
-}
 
 const end = () => {
   document.querySelector('#dialogo').style.display = 'block'
