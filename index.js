@@ -1,10 +1,22 @@
 const auditorioButton = document.querySelector('#auditorio')
 const m32rButton = document.querySelector('#m32r')
 const sq5Button = document.querySelector('#sq5')
+const salonButton = document.querySelector('#salon')
 
 const auditorioImg = document.querySelector('#auditorioImg')
 const m32rImg = document.querySelector('#m32rImg')
 const sq5Img = document.querySelector('#sq5Img')
+const salonImg = document.querySelector('#salonImg')
+
+salonButton.addEventListener('mouseover', () => {
+    salonImg.classList.remove('cerrar')
+    salonImg.classList.add('abrir') 
+})
+
+salonButton.addEventListener('mouseout', () => {
+    salonImg.classList.remove('abrir')
+    salonImg.classList.add('cerrar')  
+})
 
 sq5Button.addEventListener('mouseover', () => {
     sq5Img.classList.remove('cerrar')
