@@ -1,5 +1,4 @@
 const login = localStorage.getItem('login')
-console.log(login)
 if (!login) window.location.replace('./login.html')
 
 const logout = document.querySelector('#logout')
@@ -12,11 +11,23 @@ const auditorioButton = document.querySelector('#auditorio')
 const m32rButton = document.querySelector('#m32r')
 const sq5Button = document.querySelector('#sq5')
 const salonButton = document.querySelector('#salon')
+const iluminacionButton = document.querySelector('#iluminacion')
 
 const auditorioImg = document.querySelector('#auditorioImg')
 const m32rImg = document.querySelector('#m32rImg')
 const sq5Img = document.querySelector('#sq5Img')
 const salonImg = document.querySelector('#salonImg')
+const iluminacionImg = document.querySelector('#iluminacionImg')
+
+iluminacionButton.addEventListener('mouseover', () => {
+    iluminacionImg.classList.remove('cerrar')
+    iluminacionImg.classList.add('abrir') 
+})
+
+iluminacionButton.addEventListener('mouseout', () => {
+    iluminacionImg.classList.remove('abrir')
+    iluminacionImg.classList.add('cerrar')  
+})
 
 salonButton.addEventListener('mouseover', () => {
     salonImg.classList.remove('cerrar')
