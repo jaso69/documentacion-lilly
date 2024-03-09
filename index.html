@@ -23,21 +23,28 @@
                     <a 
                         href="auditorio.html"
                         id="auditorio" 
-                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                        class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
                     >
                         Esquema Auditorio
                     </a>
                     <a 
+                        href="iluminacion.html"
+                        id="iluminacion" 
+                        class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Iluminación Auditorio
+                    </a>
+                    <a 
                         href="salon.html"
                         id="salon" 
-                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                        class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
                     >
                         Esquema Salón de Actos
                     </a>
                     <a 
                         href="m32r.html"
                         id="m32r" 
-                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                        class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
                     >
                         Manual Midas M32R
                     </a>
@@ -45,7 +52,7 @@
                     <a 
                         href="sq5.html"
                         id="sq5" 
-                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                        class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
                     >
                         Manual Allen Heath SQ5
                     </a>
@@ -67,5 +74,11 @@
         </section>
     </main>
     <script src="index.js"></script>
+    <script>
+        let navegador = navigator.userAgent;
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+            alert("Este documento solo esta disponible para versión de escritorio. 1920x1080px")
+        } 
+    </script>
 </body>
 </html>

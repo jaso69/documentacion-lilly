@@ -1,0 +1,7 @@
+.az {
+    display: flex;
+    height: 100vh;
+}
+.imgi {
+    max-width: 70%;
+}

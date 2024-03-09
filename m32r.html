@@ -44,5 +44,12 @@
     </dialog>
     <script src="m32r.js" type="module"></script>
     <script src="intro.min.js"></script>
+    <script>
+        let navegador = navigator.userAgent;
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+            alert("Este documento solo esta disponible para versión de escritorio. 1920x1080px")
+        } 
+    </script>
+    <script src="auth.js"></script>
 </body>
 </html>
