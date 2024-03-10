@@ -2,7 +2,7 @@
 const label = document.querySelector('#resp')
 const pregunta = document.querySelector('#pregunta')
 const boton = document.querySelector('#boton')
-const url = 'https://openai-rpg.vercel.app/gpt/check/'
+const url = 'https://openai-rpg.vercel.app/gpt/check'
 let prompt = {}
 
 boton.addEventListener('click', () => {
@@ -19,16 +19,12 @@ const respuesta = (resp) => {
 
 
 async function Nuevo (prompt){
-    const data = await fetch( url, { 
-        method: 'POST',
-        headers: {  'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*', // Permite solicitudes desde cualquier origen
-                    'Access-Control-Allow-Methods': 'POST, GET, OPTIONS', // Métodos permitidos
-                    'Access-Control-Allow-Headers': 'Content-Type', }, 
-        body: JSON.stringify( prompt ) 
-    })
+    const data = await fetch( url, 
+        {   method: 'POST',
+            headers: {'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json'}, 
+            body: JSON.stringify( prompt ) 
+        })
     const resp = await data.json()
     respuesta(resp)
 }
 
-//Nuevo(prompt)
