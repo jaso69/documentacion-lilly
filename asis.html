@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Documentacion Lilly</title>
+</head>
+<body class="bg-[#222]">
+    <header>
+        <nav class="flex flex-col">
+            <section>
+                <ul class="flex flex-col p-4 text-center text-white m-2">
+                    <li class="flex mb-4 border-2 p-6 rounded-3xl align-middle justify-between">
+                        <a href="asis.html">asis</a>
+                        <a href="https://www.rpg.es" target="_blank">
+                            <img src="./img/logo-rpg.png" alt="" class ="mr-6">
+                        </a>
+                        <a 
+                            href="auditorio.html"
+                            id="auditorio" 
+                            class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
+                        >
+                            Esquema Auditorio
+                        </a>
+                        <a 
+                            href="iluminacion.html"
+                            id="iluminacion" 
+                            class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
+                        >
+                            Iluminación Auditorio
+                        </a>
+                        <a 
+                            href="salon.html"
+                            id="salon" 
+                            class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
+                        >
+                            Esquema Salón de Actos
+                        </a>
+                        <a 
+                            href="m32r.html"
+                            id="m32r" 
+                            class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
+                        >
+                            Manual Midas M32R
+                        </a>
+    
+                        <a 
+                            href="sq5.html"
+                            id="sq5" 
+                            class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
+                        >
+                            Manual Allen Heath SQ5
+                        </a>
+                                  
+                        <button id="logout" class="text-red-600">Logout</button>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <main class="flex flex-col mx-auto w-4/5">
+        <section class="flex h-full w-full rounded-3xl">
+            <textarea 
+            id="resp" 
+            cols="300" 
+            rows="20" 
+            placeholder="¡Hola! Soy Edu, el asistente virtual de rpg.es. ¿En qué puedo ayudarte hoy?" 
+            class="border-4 border-[#09f] mb-4 p-4 rounded-3xl"></textarea>
+        </section>
+        <input 
+        type="text" 
+        id="pregunta" 
+        placeholder="Escribe aqui tu pregunta" 
+        class="flex w-full text-xl font-bold p-2 rounded-3xl">
+        <button id="boton" class="flex justify-center w-96 text-xl text-white font-bold bg-[#09f] p-2 rounded-3xl mt-4 mx-auto hover:bg-white hover:text-[#09f]">Enviar</button>
+        <h1 id="resp" class="text-white text-xl"></h1>
+    </main>
+    
+</body>
+<script src="asis.js"></script>
+</html>
