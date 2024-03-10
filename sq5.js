@@ -20,7 +20,7 @@ buttonNo.addEventListener('click', () => {window.location.replace('./index.html'
 document.querySelector('#dialogo').style.display = 'none'
 
 const next = () => {
-  window.location.replace('./m32rControl.html')
+  window.location.replace('./sq5.html') 
 }
 
 const end = () => {
