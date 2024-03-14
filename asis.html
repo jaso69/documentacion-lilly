@@ -16,7 +16,6 @@
             <section>
                 <ul class="flex flex-col p-4 text-center text-white m-2">
                     <li class="flex mb-4 border-2 p-6 rounded-3xl align-middle justify-between">
-                        <a href="asis.html">asis</a>
                         <a href="https://www.rpg.es" target="_blank">
                             <img src="./img/logo-rpg.png" alt="" class ="mr-6">
                         </a>
@@ -64,13 +63,20 @@
         </nav>
     </header>
     <main class="flex flex-col mx-auto w-4/5">
-        <section class="flex h-full w-full rounded-3xl">
-            <textarea 
-            id="resp" 
-            cols="300" 
-            rows="20" 
-            placeholder="¡Hola! Soy Edu, el asistente virtual de rpg.es. ¿En qué puedo ayudarte hoy?" 
-            class="border-4 border-[#09f] mb-4 p-4 rounded-3xl"></textarea>
+        <a
+        href="index.html" 
+        class="flex w-48 bg-[#09f] text-white justify-center gap-2 p-2 m-2 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
+            </svg>
+            volver
+        </a>
+        <section class="flex flex-col h-96 bg-white mt-4 mb-4 w-full rounded-3xl">
+            <p id="preg" class="m-2 p-2"></p>
+            <p id="loading" class="m-2 p-2"></p>
+            <p id="resp" class="m-2 p-2"></p>  
         </section>
         <input 
         type="text" 
