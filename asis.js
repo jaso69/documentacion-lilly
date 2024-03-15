@@ -26,7 +26,7 @@ const respuesta = (resp) => {
 async function Nuevo (prompt){
     const data = await fetch( url, 
         {   method: 'POST',
-            mode: 'cors',
+            //mode: 'cors',
             headers: {'Content-Type': 'application/json'}, 
             body: JSON.stringify( prompt ) 
         })
