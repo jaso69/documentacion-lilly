@@ -10,12 +10,12 @@ let url;
 
 boton.addEventListener('click', (event) => {
     event.preventDefault();
-    resol.value = ''
     const p = String(pregunta.value)
+    if(p.length < 1) return
+    resol.value = ''
     question = p
     preg.innerHTML = question 
     pregunta.value = ''
-    if(p.length < 1) return
     prompt = {prompt: p}
     loading.innerHTML = 'Un momento....'
     url = 'https://jaweb.es:3000/api/gpt?prompt=' + p

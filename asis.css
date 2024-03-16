@@ -4,9 +4,9 @@
     right: 20px; /* Distancia desde la derecha */
     width: 400px; /* Ancho del chat */
     background-color: #09f; /* Color de fondo del chat */
-    border: 1px solid #ccc; /* Borde del chat */
+    border: 2px solid #ccc; /* Borde del chat */
     border-radius: 10px; /* Borde redondeado */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 0 10px rgba(180, 14, 33, 0.1); /* Sombra */
   }
 
 .chat-container {
@@ -15,7 +15,7 @@
     justify-content: space-between;
     width: 400px;
     height: 60vh;
-    margin: 20px auto;
+    margin: 10px auto;
   }
   
   .chat-box {
@@ -42,13 +42,13 @@
   }
   
   .typing {
-    background-color: #9dafea;
-    color: #080538;
-    animation: typing-animation 1s infinite;
+    background-color: #09f;
+    border-radius: 5px;
+    animation: typing-animation 1.5s infinite;
   }
   
   @keyframes typing-animation {
-    0% { opacity: 0; }
+    0% { opacity: 0.2; }
     50% { opacity: 0.5; }
     100% { opacity: 1; }
   }
