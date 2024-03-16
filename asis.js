@@ -13,7 +13,7 @@ boton.addEventListener('click', () => {
     if(p.length < 1) return
     prompt = {prompt: p}
     loading.innerHTML = 'Un momento....'
-    url = 'https://jaweb.es/api/gpt?prompt=' + p
+    url = 'https://jaweb.es:3000/api/gpt?prompt=' + p
     Nuevo(prompt)
 })
 
