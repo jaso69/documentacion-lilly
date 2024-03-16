@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="asis.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Documentacion Lilly</title>
 </head>
@@ -48,14 +49,6 @@
                     >
                         Manual Allen Heath SQ5
                     </a>
-
-                    <a 
-                        href="asis.html"
-                        id="asis" 
-                        class="bg-[#09f] text-white p-6 font-bold rounded-full hover:bg-white hover:text-[#09f]"
-                    >
-                        Tecnico Virtual
-                    </a>
                               
                     <button id="logout" class="text-red-600">Logout</button>
                 </li>
@@ -71,11 +64,43 @@
             <img id="m32rImg" src="./img/m32rFront.png" alt="midas" class="cerrar">
             <img id="sq5Img" src="./img/sq5Tumb.jpg" alt="sq5" class="cerrar">
             <img id="salonImg" src="./img/salonActosTumb.png" alt="sq5" class="cerrar">
-            <img id="iluminacionImg" src="./img/iluminacion.png" alt="Iluminación" class="cerrar">
-            <img id="asisImg" src="./img/asis.jpg" alt="Iluminación" height="90%" class="cerrar">
         </section>
     </main>
+    <div class="contenedor">
+        <h1 class=" flex gap-2 text-center text-white font-bold p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="typing icon icon-tabler icon-tabler-message-chatbot" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                <path d="M9.5 9h.01" />
+                <path d="M14.5 9h.01" />
+                <path d="M9.5 13a3.5 3.5 0 0 0 5 0" />
+            </svg>
+            En qué puedo ayudarte?
+        </h1>
+        <form class="chat-container border-2 p-4 rounded-3xl">
+            <section class="chat-box">
+                <div id="preg" class="message sent"></div>
+                <div id="loading" class="message"></div>
+                <div id="resp" class="message received"></div>  
+            </section>
+            <div>
+                <input 
+                type="text" 
+                id="pregunta" 
+                placeholder="consulta aquí tus dudas" 
+                class="flex font-bold p-2 mt-4 rounded-3xl">
+                <button 
+                id="boton" 
+                type="submit"
+                class="flex justify-center text-white font-bold bg-[#09f] p-2 rounded-3xl mt-4 mx-auto hover:bg-white hover:text-[#09f]"
+                >
+                Enviar
+                </button>
+            </div>
+        </form>
+    </div>
     <script src="index.js"></script>
+    <script src="asis.js"></script>
     <script>
         let navegador = navigator.userAgent;
         if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
