@@ -1,4 +1,4 @@
-const label = document.querySelector('#resp')
+const resol = document.querySelector('#resp')
 const preg = document.querySelector('#preg')
 const loading = document.querySelector('#loading')
 const pregunta = document.querySelector('#pregunta')
@@ -10,9 +10,10 @@ let url;
 
 boton.addEventListener('click', (event) => {
     event.preventDefault();
+    resol.value = ''
     const p = String(pregunta.value)
     question = p
-    preg.innerHTML = 'Cliente:' + ' ' + question + ' ' + '?'
+    preg.innerHTML = question 
     pregunta.value = ''
     if(p.length < 1) return
     prompt = {prompt: p}
@@ -24,8 +25,8 @@ boton.addEventListener('click', (event) => {
 const respuesta = (resp) => {
     message.push({question : resp})
     loading.innerHTML = ''
-    preg.innerHTML = question + ' ' + '?'
-    label.innerHTML = resp.message;
+    //preg.innerHTML = question + ' ' + '?'
+    resol.innerHTML = resp.message;
 
 }
 
