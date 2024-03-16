@@ -3,7 +3,7 @@
     bottom: 20px; /* Distancia desde la parte inferior */
     right: 20px; /* Distancia desde la derecha */
     width: 400px; /* Ancho del chat */
-    background-color: #ec5959; /* Color de fondo del chat */
+    background-color: #09f; /* Color de fondo del chat */
     border: 1px solid #ccc; /* Borde del chat */
     border-radius: 10px; /* Borde redondeado */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
