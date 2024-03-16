@@ -5,3 +5,7 @@ main{
     justify-content: center;
     background-color: #262626;
 }
+
+.error{
+    border-color: red;
+}
