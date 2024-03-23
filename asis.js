@@ -30,6 +30,15 @@ const respuesta = (resp) => {
 
 }
 
+const inicio = () => {
+    //return
+    const p = 'Hola'
+    prompt = {prompt: p}
+    loading.innerHTML = 'Un momento....'
+    url = 'https://jaweb.es:3000/api/gpt?prompt=' + p
+    Nuevo(prompt)
+}
+
 
 async function Nuevo (prompt){
     const data = await fetch( url, 
@@ -41,4 +50,6 @@ async function Nuevo (prompt){
     const resp = await data.json()
     respuesta(resp)
 }
+
+inicio()
 
