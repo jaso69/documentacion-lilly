@@ -27,7 +27,11 @@ const respuesta = (resp) => {
     message.push({question : resp})
     loading.innerHTML = ''
     //preg.innerHTML = question + ' ' + '?'
-    resol.innerHTML = resp.message;
+    if(resp.message){
+        resol.innerHTML = resp.message;
+    } else {
+        resol.innerHTML = 'Lamentamos no poder responder en este momento, pruebe en unos minutos.'
+    }
 
 }
 
