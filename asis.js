@@ -10,6 +10,7 @@ let url;
 
 boton.addEventListener('click', (event) => {
     event.preventDefault();
+    resol.innerHTML = ''
     const p = String(pregunta.value)
     if(p.length < 1) return
     resol.value = ''
