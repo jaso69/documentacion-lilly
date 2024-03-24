@@ -36,14 +36,8 @@ const respuesta = (resp) => {
 }
 
 const inicio = () => {
-    //return
-    const p = 'Hola'
-    prompt = {prompt: p}
-    loading.innerHTML = 'Un momento....'
-    url = 'https://jaweb.es:3000/api/gpt?prompt=' + p
-    Nuevo(prompt)
+    resol.innerHTML = '¡Hola! Soy Pixel, el asistente virtual de RPG. ¿En qué puedo ayudarte hoy?'
 }
-
 
 async function Nuevo (prompt){
     const data = await fetch( url, 
