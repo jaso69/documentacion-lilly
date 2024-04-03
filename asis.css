@@ -37,12 +37,12 @@
   }
   
   .sent {
-    background-color: #b7e0d2;
+    background-color: #d8bfd788;
     align-self: flex-end;
   }
   
   .typing {
-    background-color: #09f;
+    /* background-color: #09f; */
     border-radius: 5px;
     animation: typing-animation 1.5s infinite;
   }
@@ -52,6 +52,9 @@
     animation-duration: 4s;
     animation-direction: reverse;
     animation-timing-function: ease-in;
+    &:hover{
+      background: rgb(27, 14, 82);
+    }
   }
   
   @keyframes typing-animation {
