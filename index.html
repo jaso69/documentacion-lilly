@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Documentacion Lilly</title>
 </head>
-<body class="bg-[#222]">
+<body class="bg-[#222] w-screen">
     <nav class="flex flex-col">
         <section>
             <ul class="flex flex-col p-4 text-center text-white m-2">
@@ -73,7 +73,7 @@
             <img id="salonImg" src="./img/salonActosTumb.png" alt="sq5" class="cerrar">
         </section>
     </main>
-    <div class="contenedor">
+    <div class="contenedor move">
         <div class="flex justify-around mx-auto">
             <img src="/img/logo-rpg.png" alt="" width="90px">
             <h1 class="text-center text-white text-xl font-bold p-2">
@@ -117,5 +117,14 @@
             alert("Este documento solo esta disponible para versión de escritorio. 1920x1080px")
         } 
     </script>
+    <div class="flex top-0 fixed -z-50 opacity-70 w-screen justify-center">
+        <video
+        muted
+        autoplay
+        loop 
+        src="./img/1-Cabecera_Web_FullHD_low.mp4"
+        >
+        </video>
+      </div>
 </body>
 </html>

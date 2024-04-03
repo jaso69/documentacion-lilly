@@ -46,10 +46,29 @@
     border-radius: 5px;
     animation: typing-animation 1.5s infinite;
   }
+
+  .move{
+    animation-name: move;
+    animation-duration: 4s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+  }
   
   @keyframes typing-animation {
     0% { opacity: 0.2; }
     50% { opacity: 0.5; }
-    100% { opacity: 1; }
+    100% { opacity: .6; }
   }
+
+  @keyframes move {
+    0%{
+        /* transform: translateY(0px); */
+        height: 68%;
+    }
+    to{
+        /* transform: translateY(00px); */
+        height: 0%;
+    }
+    
+}
   
