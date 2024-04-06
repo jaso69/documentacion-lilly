@@ -67,10 +67,12 @@
     0%{
         /* transform: translateY(0px); */
         height: 68%;
+        opacity: 1;
     }
     to{
         /* transform: translateY(00px); */
         height: 0%;
+        opacity: 0;
     }
     
 }
